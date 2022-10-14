@@ -2,9 +2,13 @@
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"composite": true,
-		"declaration": true,
 		"emitDeclarationOnly": true,
 		"removeComments": false,
+
+		// performance enhancement
+		"disableSolutionSearching": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
 	},
 	"include": ["src"]
 }
